@@ -1,4 +1,5 @@
-import { AnimationMetadata } from '@angular/animations';
+import { AnimationMetadata } from "@angular/animations";
+import Masonry from "masonry-layout";
 
 export interface NgxMasonryOptions {
   itemSelector?: string;
@@ -19,4 +20,8 @@ export interface NgxMasonryOptions {
 export interface NgxMasonryAnimations {
   show?: AnimationMetadata[];
   hide?: AnimationMetadata[];
+}
+
+export interface NgxMasonryI extends Masonry {
+  items: unknown[];
 }
